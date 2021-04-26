@@ -21,6 +21,7 @@ import (
 const configPath = "/Users/scottlewis/dksl/git/1/seata-golang/samples/at/product_svc/conf/client.yml"
 
 func main() {
+	// gin 是一个 web 框架
 	r := gin.Default()
 	config.InitConf(configPath)
 	client.NewRpcClient()
